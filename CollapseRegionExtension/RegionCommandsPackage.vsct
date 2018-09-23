@@ -67,6 +67,13 @@
 
   </Commands>
 
+  <KeyBindings>
+    <KeyBinding guid="guidRegionCommandsPackageCmdSet" id="RegionExpandId"
+      editor="guidVSStd97" key1="R" mod1="Control" key2="VK_ADD" mod2="Control"/>
+    <KeyBinding guid="guidRegionCommandsPackageCmdSet" id="RegionCollapseId"
+      editor="guidVSStd97" key1="R" mod1="Control" key2="VK_SUBTRACT" mod2="Control"/>
+  </KeyBindings>
+
   <Symbols>
     <!-- This is the package guid. -->
     <GuidSymbol name="guidRegionCommandsPackage" value="{87e70c51-1e00-4e22-9099-85542c07fdd3}" />
