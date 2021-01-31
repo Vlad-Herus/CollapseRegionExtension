@@ -164,6 +164,14 @@ namespace CollapseRegionExtension
                 {
                     regions.Add(region);
                 }
+                if (text.StartsWith("<!--"))
+                {
+                    var textLow = text.ToLower();
+                    if (textLow.Contains("region"))
+                    {
+                        regions.Add(region);
+                    }
+                }
             }
 
             return (outliningManager, regions);
