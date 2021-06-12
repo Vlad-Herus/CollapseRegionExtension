@@ -160,7 +160,8 @@ namespace CollapseRegionExtension
             {
                 var regionSnapshot = region.Extent.TextBuffer.CurrentSnapshot;
                 var text = region.Extent.GetText(regionSnapshot);
-                if (text.StartsWith("#region", StringComparison.CurrentCultureIgnoreCase))
+                if (text.StartsWith("#region", StringComparison.CurrentCultureIgnoreCase) ||
+                    text.StartsWith("#pragma region", StringComparison.CurrentCultureIgnoreCase))
                 {
                     regions.Add(region);
                 }
